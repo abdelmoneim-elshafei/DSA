@@ -123,21 +123,29 @@ public class Main {
        // cqba.queue(84);
        // cqba.display();
 
-        QueueByDLinkedList<Integer> queue = new QueueByDLinkedList<>(
-                new DoubleNode<Integer>(12,null,null));
-        queue.queue(new DoubleNode<Integer>(32,null,null));
-        queue.queue(new DoubleNode<Integer>(43,null,null));
-        queue.queue(new DoubleNode<Integer>(13,null,null));
-        queue.queue(new DoubleNode<Integer>(34,null,null));
-        queue.display();
-        queue.deQueue();
-        queue.deQueue();
-        queue.deQueue();
-        queue.deQueue();
-        queue.deQueue();
-        queue.queue(new DoubleNode<Integer>(34,null,null));
-        queue.queue(new DoubleNode<Integer>(32,null,null));
-        queue.display();
+     //   QueueByDLinkedList<Integer> queue = new QueueByDLinkedList<>(
+     //           new DoubleNode<Integer>(12,null,null));
+     //   queue.queue(new DoubleNode<Integer>(32,null,null));
+     //   queue.queue(new DoubleNode<Integer>(43,null,null));
+     //   queue.queue(new DoubleNode<Integer>(13,null,null));
+     //   queue.queue(new DoubleNode<Integer>(34,null,null));
+     //   queue.display();
+     //   queue.deQueue();
+     //   queue.deQueue();
+     //   queue.deQueue();
+     //   queue.deQueue();
+     //   queue.deQueue();
+     //   queue.queue(new DoubleNode<Integer>(34,null,null));
+     //   queue.queue(new DoubleNode<Integer>(32,null,null));
+     //   queue.display();
+
+        HashTableByArrayOfLinkedList<String> hash = new HashTableByArrayOfLinkedList<>(5);
+        hash.put(10,"abdelmoneim");
+        hash.put(15,"ahmed");
+        hash.put(5,"pose");
+        hash.put(12,"amire");
+        hash.put(13,"emad");
+        System.out.println(hash.get(5));
 
     }
 }
