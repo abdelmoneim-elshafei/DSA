@@ -89,21 +89,37 @@ public class Main {
       //  System.out.println(dynamicStack.size());
       //  System.out.println(dynamicStack.length());
 
+        //Normal Queue
+      //  QueueByArray<Integer> queue = new QueueByArray<>(7);
+      //  queue.queue(20);
+      //  queue.queue(30);
+      //  queue.queue(34);
+      //  queue.queue(90);
+      //  queue.queue(48);
+      //  queue.queue(74);
+      //  queue.queue(18);
+      //  while (!queue.isEmpty()){
+      //      System.out.println(queue.deQueue());
+      //  }
+      //  queue.deleteAll();
+      //  queue.queue(89);
+      //  System.out.println("---------------------");
+      //  while (!queue.isEmpty()){
+      //      System.out.println(queue.deQueue());
+      //  }
+       CircularQueueByArray<Integer> cqba  = new CircularQueueByArray<>(5);
+        cqba.queue(10);
+        cqba.queue(34);
+        cqba.queue(48);
+        cqba.queue(98);
+        cqba.queue(91);
+        cqba.display();
+        cqba.deQueue();
+        cqba.deQueue();
+        cqba.queue(11);
+        cqba.queue(84);
+        cqba.display();
 
-        QueueByArray<Integer> queue = new QueueByArray<>(7);
-        queue.queue(20);
-        queue.queue(30);
-        queue.queue(34);
-        queue.queue(90);
-        queue.queue(48);
-        queue.queue(74);
-        queue.queue(18);
 
-        queue.deleteAll();
-        queue.queue(89);
-        System.out.println("---------------------");
-        while (!queue.isEmpty()){
-            System.out.println(queue.deQueue());
-        }
     }
 }
