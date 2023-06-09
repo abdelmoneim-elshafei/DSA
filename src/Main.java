@@ -107,19 +107,37 @@ public class Main {
       //  while (!queue.isEmpty()){
       //      System.out.println(queue.deQueue());
       //  }
-       CircularQueueByArray<Integer> cqba  = new CircularQueueByArray<>(5);
-        cqba.queue(10);
-        cqba.queue(34);
-        cqba.queue(48);
-        cqba.queue(98);
-        cqba.queue(91);
-        cqba.display();
-        cqba.deQueue();
-        cqba.deQueue();
-        cqba.queue(11);
-        cqba.queue(84);
-        cqba.display();
 
+
+        //Circular Queue
+       // CircularQueueByArray<Integer> cqba  = new CircularQueueByArray<>(5);
+       // cqba.queue(10);
+       // cqba.queue(34);
+       // cqba.queue(48);
+       // cqba.queue(98);
+       // cqba.queue(91);
+       // cqba.display();
+       // cqba.deQueue();
+       // cqba.deQueue();
+       // cqba.queue(11);
+       // cqba.queue(84);
+       // cqba.display();
+
+        QueueByDLinkedList<Integer> queue = new QueueByDLinkedList<>(
+                new DoubleNode<Integer>(12,null,null));
+        queue.queue(new DoubleNode<Integer>(32,null,null));
+        queue.queue(new DoubleNode<Integer>(43,null,null));
+        queue.queue(new DoubleNode<Integer>(13,null,null));
+        queue.queue(new DoubleNode<Integer>(34,null,null));
+        queue.display();
+        queue.deQueue();
+        queue.deQueue();
+        queue.deQueue();
+        queue.deQueue();
+        queue.deQueue();
+        queue.queue(new DoubleNode<Integer>(34,null,null));
+        queue.queue(new DoubleNode<Integer>(32,null,null));
+        queue.display();
 
     }
 }
