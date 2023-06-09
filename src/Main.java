@@ -48,6 +48,7 @@ public class Main {
       //  charlist.display();
 
 
+        // Stack
        // StackByArray<Integer> stack = new StackByArray<>(5);
        // stack.push(20);
        // stack.push(23);
@@ -65,25 +66,44 @@ public class Main {
        //     System.out.println(stack.pop());
        // }
 
-       System.out.println("-----------------------");
 
-       StackByDynamicArray<Integer> dynamicStack = new StackByDynamicArray<>();
-       dynamicStack.push(20);
-       dynamicStack.push(40);
-       dynamicStack.push(41);
-       dynamicStack.push(43);
-       dynamicStack.push(48);
-        while (!dynamicStack.isEmpty()){
-            System.out.println(dynamicStack.pop());
+        //Stack
+      // System.out.println("-----------------------");
+
+      // StackByDynamicArray<Integer> dynamicStack = new StackByDynamicArray<>();
+      // dynamicStack.push(20);
+      // dynamicStack.push(40);
+      // dynamicStack.push(41);
+      // dynamicStack.push(43);
+      // dynamicStack.push(48);
+      //  while (!dynamicStack.isEmpty()){
+      //      System.out.println(dynamicStack.pop());
+      //  }
+      //  System.out.println(dynamicStack.size());
+      //  System.out.println(dynamicStack.length());
+      //  dynamicStack.push(20);
+      //  dynamicStack.push(40);
+      //  dynamicStack.push(41);
+      //  dynamicStack.push(43);
+      //  dynamicStack.push(48);
+      //  System.out.println(dynamicStack.size());
+      //  System.out.println(dynamicStack.length());
+
+
+        QueueByArray<Integer> queue = new QueueByArray<>(7);
+        queue.queue(20);
+        queue.queue(30);
+        queue.queue(34);
+        queue.queue(90);
+        queue.queue(48);
+        queue.queue(74);
+        queue.queue(18);
+
+        queue.deleteAll();
+        queue.queue(89);
+        System.out.println("---------------------");
+        while (!queue.isEmpty()){
+            System.out.println(queue.deQueue());
         }
-        System.out.println(dynamicStack.size());
-        System.out.println(dynamicStack.length());
-        dynamicStack.push(20);
-        dynamicStack.push(40);
-        dynamicStack.push(41);
-        dynamicStack.push(43);
-        dynamicStack.push(48);
-        System.out.println(dynamicStack.size());
-        System.out.println(dynamicStack.length());
     }
 }
