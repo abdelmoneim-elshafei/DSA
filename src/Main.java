@@ -1,3 +1,4 @@
+import Algorithms.Recursion.RecursionMath;
 import Algorithms.Search.BinarySearch;
 import Algorithms.Search.InterpolationSearch;
 import Algorithms.Search.LinerSearch;
@@ -153,6 +154,7 @@ public class Main {
      //   System.out.println(hash.get(5));
 
 
+        //Liner Search
      //   Integer [] a = new Integer[5];
      //   a[0] = 344;
      //   a[1] = 124;
@@ -175,6 +177,7 @@ public class Main {
      //   sresult.ifPresent(System.out::println);
 
 
+        //Binary Search
     //    Integer [] a = new Integer[5];
     //    a[0] = 100;
     //    a[1] = 114;
@@ -196,25 +199,27 @@ public class Main {
     //    Optional<String> sresult = BinarySearch.BinarySearchF(skey,strings);
     //    sresult.ifPresent(System.out::println);
 
-        Integer [] a = new Integer[5];
-        a[0] = 100;
-        a[1] = 114;
-        a[2] = 139;
-        a[3] = 299;
-        a[4] = 895;
-        Integer key = 100;
-        Optional<Integer> result = InterpolationSearch.InterpolationSearchF(key,a);
-        result.ifPresent(System.out::println);
 
-      //  String [] strings = new String[5];
-      //  strings[0] = "abdelmoneim";
-      //  strings[1] = "adel";
-      //  strings[2] = "ahmed";
-      //  strings[3] = "khaled";
-      //  strings[4] = "mohamed";
+      //Interpolation Search
+      //  Integer [] a = new Integer[5];
+      //  a[0] = 100;
+      //  a[1] = 114;
+      //  a[2] = 139;
+      //  a[3] = 299;
+      //  a[4] = 895;
+      //  Integer key = 100;
+      //  Optional<Integer> result = InterpolationSearch.InterpolationSearchF(key,a);
+      //  result.ifPresent(System.out::println);
 
-      //  String skey = "mohamed";
-      //  Optional<String> sresult = InterpolationSearch.InterpolationSearchF(skey,strings);
-      //  sresult.ifPresent(System.out::println);
+
+       int f = RecursionMath.factorial(5);
+       System.out.println(f);
+       f = RecursionMath.fibonacci(7);
+       System.out.println(f);
+       RecursionMath.towerOfHanoi(5,"A","C","B");
+       System.out.println(RecursionMath.ackermann(3,2);
+
+
+
     }
 }
