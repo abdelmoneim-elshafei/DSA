@@ -4,11 +4,13 @@ import Algorithms.Search.InterpolationSearch;
 import Algorithms.Search.LinerSearch;
 import Algorithms.Sort.BubbleSort;
 import Algorithms.Sort.InsertionSort;
+import Algorithms.Sort.MergeSort;
 import Algorithms.Sort.SelectionSort;
 import DataStructures.*;
 
 import java.util.Arrays;
 import java.util.Optional;
+import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
@@ -265,14 +267,39 @@ public class Main {
       //  InsertionSort.InsertionSorting(strings);
       //  BubbleSort.printArray(strings);
 
-        Integer [] a = new Integer[5];
-        a[0] = 344;
-        a[1] = 124;
-        a[2] = 84;
-        a[3] = 224;
-        a[4] = 895;
+        //selection sort
+     //   Integer [] a = new Integer[5];
+     //   a[0] = 344;
+     //   a[1] = 124;
+     //   a[2] = 84;
+     //   a[3] = 224;
+     //   a[4] = 895;
+     //   BubbleSort.printArray(a);
+     //   SelectionSort.SelectionSorting(a);
+     //   BubbleSort.printArray(a);
+
+     //   String [] strings = new String[5];
+     //   strings[0] = "D";
+     //   strings[1] = "Z";
+     //   strings[2] = "Q";
+     //   strings[3] = "A";
+     //   strings[4] = "B";
+
+     //   BubbleSort.printArray(strings);
+     //   SelectionSort.SelectionSorting(strings);
+     //   BubbleSort.printArray(strings);
+
+        Random r = new Random();
+        Integer [] a = new Integer[1000];
+        for(int i = 0; i < a.length; i++)
+            a[i] = r.nextInt(10000);
+       // a[0] = 344;
+       // a[1] = 124;
+       // a[2] = 84;
+       // a[3] = 224;
+       // a[4] = 895;
         BubbleSort.printArray(a);
-        SelectionSort.SelectionSorting(a);
+        MergeSort.mergeSorting(a);
         BubbleSort.printArray(a);
 
         String [] strings = new String[5];
@@ -283,7 +310,7 @@ public class Main {
         strings[4] = "B";
 
         BubbleSort.printArray(strings);
-        SelectionSort.SelectionSorting(strings);
+        MergeSort.mergeSorting(strings);
         BubbleSort.printArray(strings);
     }
 }
