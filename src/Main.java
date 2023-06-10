@@ -1,3 +1,4 @@
+import Algorithms.Search.BinarySearch;
 import Algorithms.Search.LinerSearch;
 import DataStructures.*;
 
@@ -151,25 +152,46 @@ public class Main {
      //   System.out.println(hash.get(5));
 
 
+     //   Integer [] a = new Integer[5];
+     //   a[0] = 344;
+     //   a[1] = 124;
+     //   a[2] = 84;
+     //   a[3] = 224;
+     //   a[4] = 895;
+     //   Integer key = 344;
+     //   Optional<Integer> result = LinerSearch.LinerSearchFunction(key,a);
+     //   result.ifPresent(System.out::println);
+
+     //   String [] strings = new String[5];
+     //   strings[0] = "ahmed";
+     //   strings[1] = "abdelmoneim";
+     //   strings[2] = "adel";
+     //   strings[3] = "mohamed";
+     //   strings[4] = "khaled";
+
+     //   String skey = "adael";
+     //   Optional<String> sresult = LinerSearch.LinerSearchFunction(skey,strings);
+     //   sresult.ifPresent(System.out::println);
+
         Integer [] a = new Integer[5];
-        a[0] = 344;
-        a[1] = 124;
-        a[2] = 84;
-        a[3] = 224;
+        a[0] = 100;
+        a[1] = 114;
+        a[2] = 139;
+        a[3] = 299;
         a[4] = 895;
-        Integer key = 344;
-        Optional<Integer> result = LinerSearch.LinerSearchFunction(key,a);
+        Integer key = 299;
+        Optional<Integer> result = BinarySearch.BinarySearchF(key,a);
         result.ifPresent(System.out::println);
 
         String [] strings = new String[5];
-        strings[0] = "ahmed";
-        strings[1] = "abdelmoneim";
-        strings[2] = "adel";
-        strings[3] = "mohamed";
-        strings[4] = "khaled";
+        strings[0] = "abdelmoneim";
+        strings[1] = "adel";
+        strings[2] = "ahmed";
+        strings[3] = "khaled";
+        strings[4] = "mohamed";
 
-        String skey = "adael";
-        Optional<String> sresult = LinerSearch.LinerSearchFunction(skey,strings);
+        String skey = "mohamed";
+        Optional<String> sresult = BinarySearch.BinarySearchF(skey,strings);
         sresult.ifPresent(System.out::println);
     }
 }
