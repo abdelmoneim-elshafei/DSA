@@ -2,8 +2,12 @@ import Algorithms.Recursion.RecursionMath;
 import Algorithms.Search.BinarySearch;
 import Algorithms.Search.InterpolationSearch;
 import Algorithms.Search.LinerSearch;
+import Algorithms.Sort.BubbleSort;
+import Algorithms.Sort.InsertionSort;
+import Algorithms.Sort.SelectionSort;
 import DataStructures.*;
 
+import java.util.Arrays;
 import java.util.Optional;
 
 public class Main {
@@ -211,15 +215,75 @@ public class Main {
       //  Optional<Integer> result = InterpolationSearch.InterpolationSearchF(key,a);
       //  result.ifPresent(System.out::println);
 
+        //recursion
+      // int f = RecursionMath.factorial(5);
+      // System.out.println(f);
+      // f = RecursionMath.fibonacci(7);
+      // System.out.println(f);
+      // RecursionMath.towerOfHanoi(5,"A","C","B");
+      // System.out.println(RecursionMath.ackermann(3,2));
 
-       int f = RecursionMath.factorial(5);
-       System.out.println(f);
-       f = RecursionMath.fibonacci(7);
-       System.out.println(f);
-       RecursionMath.towerOfHanoi(5,"A","C","B");
-       System.out.println(RecursionMath.ackermann(3,2);
+     //     Integer [] a = new Integer[5];
+     //     a[0] = 344;
+     //     a[1] = 124;
+     //     a[2] = 84;
+     //     a[3] = 224;
+     //     a[4] = 895;
+     //   BubbleSort.printArray(a);
+     //   BubbleSort.bubbleSorting(a);
+     //   BubbleSort.printArray(a);
 
+     //      String [] strings = new String[5];
+     //      strings[0] = "D";
+     //      strings[1] = "Z";
+     //      strings[2] = "Q";
+     //      strings[3] = "A";
+     //      strings[4] = "B";
 
+     //   BubbleSort.printArray(strings);
+     //   BubbleSort.bubbleSorting(strings);
+     //   BubbleSort.printArray(strings);
 
+      //  Integer [] a = new Integer[5];
+      //  a[0] = 344;
+      //  a[1] = 124;
+      //  a[2] = 84;
+      //  a[3] = 224;
+      //  a[4] = 895;
+      //  BubbleSort.printArray(a);
+      //  InsertionSort.InsertionSorting(a);
+      //  BubbleSort.printArray(a);
+
+      //  String [] strings = new String[5];
+      //  strings[0] = "D";
+      //  strings[1] = "Z";
+      //  strings[2] = "Q";
+      //  strings[3] = "A";
+      //  strings[4] = "B";
+
+      //  BubbleSort.printArray(strings);
+      //  InsertionSort.InsertionSorting(strings);
+      //  BubbleSort.printArray(strings);
+
+        Integer [] a = new Integer[5];
+        a[0] = 344;
+        a[1] = 124;
+        a[2] = 84;
+        a[3] = 224;
+        a[4] = 895;
+        BubbleSort.printArray(a);
+        SelectionSort.SelectionSorting(a);
+        BubbleSort.printArray(a);
+
+        String [] strings = new String[5];
+        strings[0] = "D";
+        strings[1] = "Z";
+        strings[2] = "Q";
+        strings[3] = "A";
+        strings[4] = "B";
+
+        BubbleSort.printArray(strings);
+        SelectionSort.SelectionSorting(strings);
+        BubbleSort.printArray(strings);
     }
 }
