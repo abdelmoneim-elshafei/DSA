@@ -1,4 +1,7 @@
+import Algorithms.Search.LinerSearch;
 import DataStructures.*;
+
+import java.util.Optional;
 
 public class Main {
     public static void main(String[] args) {
@@ -139,13 +142,34 @@ public class Main {
      //   queue.queue(new DoubleNode<Integer>(32,null,null));
      //   queue.display();
 
-        HashTableByArrayOfLinkedList<String> hash = new HashTableByArrayOfLinkedList<>(5);
-        hash.put(10,"abdelmoneim");
-        hash.put(15,"ahmed");
-        hash.put(5,"pose");
-        hash.put(12,"amire");
-        hash.put(13,"emad");
-        System.out.println(hash.get(5));
+     //   HashTableByArrayOfLinkedList<String> hash = new HashTableByArrayOfLinkedList<>(5);
+     //   hash.put(10,"abdelmoneim");
+     //   hash.put(15,"ahmed");
+     //   hash.put(5,"pose");
+     //   hash.put(12,"amire");
+     //   hash.put(13,"emad");
+     //   System.out.println(hash.get(5));
 
+
+        Integer [] a = new Integer[5];
+        a[0] = 344;
+        a[1] = 124;
+        a[2] = 84;
+        a[3] = 224;
+        a[4] = 895;
+        Integer key = 344;
+        Optional<Integer> result = LinerSearch.LinerSearchFunction(key,a);
+        result.ifPresent(System.out::println);
+
+        String [] strings = new String[5];
+        strings[0] = "ahmed";
+        strings[1] = "abdelmoneim";
+        strings[2] = "adel";
+        strings[3] = "mohamed";
+        strings[4] = "khaled";
+
+        String skey = "adael";
+        Optional<String> sresult = LinerSearch.LinerSearchFunction(skey,strings);
+        sresult.ifPresent(System.out::println);
     }
 }
