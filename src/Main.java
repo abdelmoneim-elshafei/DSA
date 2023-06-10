@@ -1,4 +1,5 @@
 import Algorithms.Search.BinarySearch;
+import Algorithms.Search.InterpolationSearch;
 import Algorithms.Search.LinerSearch;
 import DataStructures.*;
 
@@ -173,25 +174,47 @@ public class Main {
      //   Optional<String> sresult = LinerSearch.LinerSearchFunction(skey,strings);
      //   sresult.ifPresent(System.out::println);
 
+
+    //    Integer [] a = new Integer[5];
+    //    a[0] = 100;
+    //    a[1] = 114;
+    //    a[2] = 139;
+    //    a[3] = 299;
+    //    a[4] = 895;
+    //    Integer key = 299;
+    //    Optional<Integer> result = BinarySearch.BinarySearchF(key,a);
+    //    result.ifPresent(System.out::println);
+
+    //    String [] strings = new String[5];
+    //    strings[0] = "abdelmoneim";
+    //    strings[1] = "adel";
+    //    strings[2] = "ahmed";
+    //    strings[3] = "khaled";
+    //    strings[4] = "mohamed";
+
+    //    String skey = "mohamed";
+    //    Optional<String> sresult = BinarySearch.BinarySearchF(skey,strings);
+    //    sresult.ifPresent(System.out::println);
+
         Integer [] a = new Integer[5];
         a[0] = 100;
         a[1] = 114;
         a[2] = 139;
         a[3] = 299;
         a[4] = 895;
-        Integer key = 299;
-        Optional<Integer> result = BinarySearch.BinarySearchF(key,a);
+        Integer key = 100;
+        Optional<Integer> result = InterpolationSearch.InterpolationSearchF(key,a);
         result.ifPresent(System.out::println);
 
-        String [] strings = new String[5];
-        strings[0] = "abdelmoneim";
-        strings[1] = "adel";
-        strings[2] = "ahmed";
-        strings[3] = "khaled";
-        strings[4] = "mohamed";
+      //  String [] strings = new String[5];
+      //  strings[0] = "abdelmoneim";
+      //  strings[1] = "adel";
+      //  strings[2] = "ahmed";
+      //  strings[3] = "khaled";
+      //  strings[4] = "mohamed";
 
-        String skey = "mohamed";
-        Optional<String> sresult = BinarySearch.BinarySearchF(skey,strings);
-        sresult.ifPresent(System.out::println);
+      //  String skey = "mohamed";
+      //  Optional<String> sresult = InterpolationSearch.InterpolationSearchF(skey,strings);
+      //  sresult.ifPresent(System.out::println);
     }
 }
