@@ -289,15 +289,17 @@ public class Main {
      //   SelectionSort.SelectionSorting(strings);
      //   BubbleSort.printArray(strings);
 
-        Random r = new Random();
-        Integer [] a = new Integer[1000];
+      /*  Random r = new Random();
+        Integer [] a = new Integer[100000000];
         for(int i = 0; i < a.length; i++)
-            a[i] = r.nextInt(10000);
-       // a[0] = 344;
-       // a[1] = 124;
-       // a[2] = 84;
-       // a[3] = 224;
-       // a[4] = 895;
+            a[i] = r.nextInt(100000);*/
+
+     /*        Integer [] a = new Integer[5];
+        a[0] = 344;
+        a[1] = 124;
+        a[2] = 84;
+        a[3] = 224;
+        a[4] = 895;
         BubbleSort.printArray(a);
         MergeSort.mergeSorting(a);
         BubbleSort.printArray(a);
@@ -311,6 +313,19 @@ public class Main {
 
         BubbleSort.printArray(strings);
         MergeSort.mergeSorting(strings);
-        BubbleSort.printArray(strings);
+        BubbleSort.printArray(strings);*/
+
+
+        Integer [] a = new Integer[5];
+        a[0] = 344;
+        a[1] = 124;
+        a[2] = 84;
+        a[3] = 224;
+        a[4] = 895;
+        BubbleSort.printArray(a);
+        MergeSort<Integer> mergeSort = new MergeSort<>(a);
+//        MergeSort.mergeSorting(a);
+        BubbleSort.printArray(a);
+
     }
 }
