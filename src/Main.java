@@ -1,11 +1,10 @@
+import Algorithms.Graph.BTNode;
+import Algorithms.Graph.BinaryTree;
 import Algorithms.Recursion.RecursionMath;
 import Algorithms.Search.BinarySearch;
 import Algorithms.Search.InterpolationSearch;
 import Algorithms.Search.LinerSearch;
-import Algorithms.Sort.BubbleSort;
-import Algorithms.Sort.InsertionSort;
-import Algorithms.Sort.MergeSort;
-import Algorithms.Sort.SelectionSort;
+import Algorithms.Sort.*;
 import DataStructures.*;
 
 import java.util.Arrays;
@@ -15,7 +14,7 @@ import java.util.Random;
 public class Main {
     public static void main(String[] args) {
 
-      //  ArrayStructure a = new ArrayStructure();
+     //  ArrayStructure a = new ArrayStructure();
       //  a.printArry();
       //  a.printArryOfObject();
       //  a.print2DArry();
@@ -289,7 +288,7 @@ public class Main {
      //   SelectionSort.SelectionSorting(strings);
      //   BubbleSort.printArray(strings);
 
-      /*  Random r = new Random();
+     /*  Random r = new Random();
         Integer [] a = new Integer[100000000];
         for(int i = 0; i < a.length; i++)
             a[i] = r.nextInt(100000);*/
@@ -315,6 +314,7 @@ public class Main {
         MergeSort.mergeSorting(strings);
         BubbleSort.printArray(strings);*/
 
+     /*
 
         Integer [] a = new Integer[5];
         a[0] = 344;
@@ -326,6 +326,40 @@ public class Main {
         MergeSort<Integer> mergeSort = new MergeSort<>(a);
 //        MergeSort.mergeSorting(a);
         BubbleSort.printArray(a);
+*/
 
+       /* Integer [] a = new Integer[5];
+        a[0] = 344;
+        a[1] = 124;
+        a[2] = 84;
+        a[3] = 224;
+        a[4] = 895;
+        BubbleSort.printArray(a);
+        HeapSort.heapSorting(a);
+        BubbleSort.printArray(a);
+
+        String [] strings = new String[5];
+        strings[0] = "D";
+        strings[1] = "Z";
+        strings[2] = "Q";
+        strings[3] = "A";
+        strings[4] = "B";
+        BubbleSort.printArray(strings);
+        HeapSort.heapSorting(strings);
+        BubbleSort.printArray(strings);*/
+        BTNode<Integer> root = new BTNode<>(23,null,null);
+        BinaryTree<Integer> binaryTree = new BinaryTree<>(root);
+        binaryTree.add(new BTNode(34,null,null),binaryTree.getRoot());
+        binaryTree.add(new BTNode(43,null,null),binaryTree.getRoot());
+        binaryTree.add(new BTNode(4,null,null),binaryTree.getRoot());
+        binaryTree.add(new BTNode(3,null,null),binaryTree.getRoot());
+        binaryTree.add(new BTNode(15,null,null),binaryTree.getRoot());
+        binaryTree.add(new BTNode(17,null,null),binaryTree.getRoot());
+        binaryTree.add(new BTNode(33,null,null),binaryTree.getRoot());
+       // binaryTree.printTree(binaryTree.getRoot()," ");
+      //  binaryTree.search(15,binaryTree.getRoot());
+        binaryTree.print2D(binaryTree.getRoot());
+        BTNode<Integer> newRoot = binaryTree.deletion(23,binaryTree.getRoot());
+        binaryTree.print2D(binaryTree.getRoot());
     }
 }
